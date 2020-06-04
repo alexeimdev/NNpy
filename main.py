@@ -32,10 +32,10 @@ X_L1_N1 = [1]
 X_L1_N2 = [1]
 
 # Layer 1
-n_L1_N1 = Neuron("L1N1", X_L1_N1, Activation.Sigmoid)
-n_L1_N2 = Neuron("L1N2", X_L1_N2, Activation.Sigmoid)
+n_L1_N1 = Node("L1N1", X_L1_N1, Activation.Sigmoid)
+n_L1_N2 = Node("L1N2", X_L1_N2, Activation.Sigmoid)
 
 
 # Layer 2
-n_L2_N1 = Neuron("L2N1", , Activation.Sigmoid)
+# n_L2_N1 = Neuron("L2N1", , Activation.Sigmoid)
 
