@@ -19,7 +19,7 @@ class Node:
         return 0.1  # TODO: from rand
 
     def init_weights(self):
-        initail_weights = []
+        initial_weights = []
         for i in range(len(self.input_nodes)):
-            initail_weights.append(2)  # TODO: from rand
-        return initail_weights
+            initial_weights.append(2)  # TODO: from rand
+        return initial_weights
