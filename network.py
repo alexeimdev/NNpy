@@ -19,6 +19,9 @@ class Network:
         output_layer = self.__generate_layer(LayerType.OUTPUT, num_of_nodes, Activation.PassThrough)
         self.layers.append(output_layer)
 
+    def init(self):
+        self.__init(self.layers)
+
     def connect(self):
         self.__fully_connect(self.layers)
 
@@ -64,6 +67,12 @@ class Network:
                 for curr_node in curr_layer.nodes:
                     for prev_node in prev_layer.nodes:
                         curr_node.input_nodes.append(prev_node)   
+
+    @staticmethod
+    def __init(layers):
+        for layer in layers:
+            for node in layer.nodes:
+                node.init_weights()
 
     @staticmethod
     def __activate_layer(layer):

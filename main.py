@@ -9,6 +9,7 @@ network.add_hidden_layer(3, Activation.ReLU)
 network.add_output_layer(3)
 network.connect()
 network.feed([1,2,3])
+network.init()
 network.activate()
 
 for layer in network.layers:
