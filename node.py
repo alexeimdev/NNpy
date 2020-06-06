@@ -1,9 +1,9 @@
 class Node:
-    def __init__(self, id, activation, output = 0):
+    def __init__(self, id, activation):
         self.id = id
         self.activation = activation
         self.input_nodes = []
-        self.output = output
+        self.output = 0
     
     def activate(self):
         # self.output = 0 TODO: check next iteration after bp
