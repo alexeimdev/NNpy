@@ -8,7 +8,7 @@ class Node:
     
     def init_weights(self):
         for i in range(len(self.input_nodes)):
-            self.weights.append(0) # TODO: rand
+            self.weights.append(1) # TODO: rand
 
     def activate(self):
         # self.output = 0 TODO: check next iteration after bp
