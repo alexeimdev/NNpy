@@ -7,6 +7,10 @@ class Activation:
     @staticmethod
     def PassThrough(x):
         return x
+
+    @staticmethod
+    def Step(x):
+        return 1 if x > 0 else 0 # TODO: change 1 value
         
     @staticmethod
     def ReLU(x):
